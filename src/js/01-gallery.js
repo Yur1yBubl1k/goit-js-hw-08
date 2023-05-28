@@ -5,11 +5,8 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 
-// console.log(galleryItems);
-
-
 const ulListElemSecond = document.querySelector('.gallery');
-// console.log(ulListElemSecond);
+
 
 const createImageListFuncSecond = galleryItems.map(({preview, original, description}) =>{
     return `
@@ -31,14 +28,3 @@ let gallery = new SimpleLightbox('.gallery a', {
     close: true,
 });
 
-// const clickFunc = (event) => {
-//     event.preventDefault();
-  
-//   const isCardReview =event.target.classList.contains("gallery__image");
-//   if( !isCardReview) {
-//       return;
-//   } 
-//   console.log(event.target.src);
-//   };
-  
-//   ulListElemSecond.addEventListener("click", clickFunc);
